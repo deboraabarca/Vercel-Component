@@ -1,47 +1,57 @@
-  .menu{
-    position: relative;
-  }
-  .button{
-    background-color: #000;
-    border: none;
-    border-radius: 8px;
-    color: #fff;
-    padding: 10px 20px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: scale 0.10s ease;
-  }
+.menu {
+  position: relative;
+}
+.button {
+  background-color: #000;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  padding: 10px 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: scale 0.10s ease;
+}
 .menuButton {
   position: absolute;
-  top:55px;
-  left:5px;
+  top: 55px;
+  left: 5px;
   list-style-type: none;
-    margin: 0;
-    border-radius: 12px;
-    font-size: 14px;
-    outline: none;
-    background:#fff;
-    padding: 8px;
-    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 4px 11px rgba(0, 0, 0, 0.1);
+  margin: 0;
+  border-radius: 12px;
+  font-size: 14px;
+  outline: none;
+  background: #fff;
+  padding: 8px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1), 0 4px 11px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+  opacity: 0;
 }
 .li, .delete {
   padding: 8px;
   outline: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    padding: 0 8px;
-    height: 40px;
-    text-decoration: none;
-    border-radius: 6px;
-    color:hsla( 0,0%,9% ,1);
-    font-size: 1rem;
-    width: 180px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 0 8px;
+  height: 40px;
+  text-decoration: none;
+  border-radius: 6px;
+  color: hsla(0, 0%, 9%, 1);
+  font-size: 1rem;
+  width: 180px;
 }
-.li:hover{
+.li:hover {
   background-color: rgb(245, 242, 242);
 }
-.delete{
-  color:red
+.delete {
+  color: red;
 }
-  
+.delete:hover{
+  background-color: rgb(245, 242, 242);
+}
+
+.open {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
